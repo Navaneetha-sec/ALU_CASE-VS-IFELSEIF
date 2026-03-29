@@ -89,6 +89,7 @@ Select “Don’t include any libraries (verilog design)” from “New cds.lib 
 We are simulating a verilog design without using any libraries
 
 Click “OK” in the “nclaunch: Open Design Directory” window, as shown in the figure below
+<img width="1920" height="1200" alt="1" src="https://github.com/user-attachments/assets/1c698c71-9056-4e9d-8f8b-114dbc7c6095" />
 
 #### Fig 2: Selection of Don’t include any libraries
 An ‘NCLaunch window’ appears as shown in the figure below
@@ -98,6 +99,7 @@ Left side, you can see the HDL files. The right side of the window has Worklib a
 Worklib is the directory where all the compiled codes are stored, while Snapshot will have the output of elaboration, which in turn goes for simulation.
 
 To perform the function simulation, the following three steps are involved: Compilation, Elaboration and Simulation.
+<img width="1920" height="1200" alt="2" src="https://github.com/user-attachments/assets/371d438a-aca5-4d12-a846-8e69a976abdf" />
 
 #### Fig 3: Nclaunch Window
 
@@ -120,6 +122,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile filename.v
 Left side select the file and in Tools: launch verilog compiler with current selection will get enable. Click it to compile the code
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+<img width="1920" height="1200" alt="3,4" src="https://github.com/user-attachments/assets/ddae6c00-00df-4785-9957-fe0bf83367cf" />
 
 #### Fig 4: Compiled database in WorkLib
 After compilation, it will come under worklib. You can see on the right side window
@@ -150,6 +153,7 @@ Outputs: Elaborate database updated in the mapped library if successful, generat
 5.It also establishes net connectivity and prepares all of this for simulation
 
 After elaboration, the file will come under snapshot. Select the test bench and simulate it.
+<img width="1920" height="1200" alt="3,4" src="https://github.com/user-attachments/assets/cf0c77ff-2a54-4509-aa0b-794914b36d1c" />
 
 #### Fig 5: Elaboration Launch Option
 
@@ -163,8 +167,10 @@ Outputs: Simulation log file, waveforms for debugging
 Simulations allow dumping design and test bench signals into a waveform
 
 Steps for simulation – Run the simulation command with simulator options
+<img width="1714" height="912" alt="5" src="https://github.com/user-attachments/assets/84ed673e-1fba-4cf5-9325-0a3aaba5771c" />
 
 #### Fig 6: Design Browser window for simulation
+<img width="1769" height="949" alt="6" src="https://github.com/user-attachments/assets/95e4fdbd-6095-46d6-a6de-86cf106f2f85" />
 
 #### Fig 7: Simulation Waveform Window
 
@@ -173,6 +179,7 @@ Synthesis requires three files as follows,
 ◦ Liberty Files (.lib)
 
 ◦ Verilog/VHDL Files (.v or .vhdl or .vhd)
+<img width="1771" height="911" alt="7" src="https://github.com/user-attachments/assets/32f25173-a8b1-4802-8921-277114e4ebb7" />
 
 ##### Performing Synthesis
 
@@ -189,14 +196,19 @@ The Liberty files are present in the library path,
 • Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist. Or use source run.tcl command in the terminal window to view the netlist, and a log file will be created in the working folder.
 
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
+<img width="1779" height="921" alt="8" src="https://github.com/user-attachments/assets/6f422974-78ec-4915-b266-ba94200f4bee" />
 
 #### Fig 9: Area report of case and ifelseif construct
+<img width="1607" height="977" alt="image" src="https://github.com/user-attachments/assets/cdf3ef00-a156-418a-9250-02e06bba87f3" />
 
 #### Fig 10: Power Report of case and ifelseif construct
+<img width="1604" height="975" alt="Screenshot 2025-11-21 181803" src="https://github.com/user-attachments/assets/9ad1c04b-09dc-4bbe-8379-e4a260413119" />
 
 #### Fig 11: Timing Report of case and ifelseif construct
+<img width="1604" height="975" alt="Screenshot 2025-11-21 181803" src="https://github.com/user-attachments/assets/37237db1-183c-4de1-8780-0638cad264f5" />
 
 #### Fig 12: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
+<img width="1317" height="631" alt="exp4_last" src="https://github.com/user-attachments/assets/63cd6f17-f169-46c5-ba51-b53e27f19493" />
 
 ## Result
 The 32-bit ALU implemented using behavioural case statements and if–elseif constructs was successfully verified under Incisive (ncvlog/ncsim) for all tested vectors. Both implementations were functionally correct and synthesizable. Synthesis using Cadence Genus generated gate-level netlists along with area, timing, and power reports.
